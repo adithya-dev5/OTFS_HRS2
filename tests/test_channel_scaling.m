@@ -1,13 +1,6 @@
 function test_channel_scaling()
-% TEST_CHANNEL_SCALING Independent of current working directory.
-this_file = mfilename('fullpath');
-this_dir = fileparts(this_file);
-repo_root = fileparts(this_dir);
-addpath(fullfile(repo_root, 'config'));
-addpath(fullfile(repo_root, 'core', 'channel'));
-
+addpath('config'); addpath('core/channel');
 cfg = default_config();
-cfg.seed_initialized = true; % satisfy channel contract for direct unit test
 cfg.channel.mode = "synthetic_fractional";
 cfg.targets = struct('tau', 0, 'nu', 0, 'gain', 2.0);
 

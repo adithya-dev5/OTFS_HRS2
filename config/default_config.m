@@ -69,11 +69,4 @@ cfg.experiments.max_frames = 500;
 cfg.experiments.min_errors = 300;
 cfg.experiments.output_dir = 'analysis/results';
 
-% --------------------------
-% Runtime / integrity controls
-% --------------------------
-cfg.enable_profiling = false;
-cfg.git_commit_hash = '';
-cfg.seed_initialized = false;
-
 end

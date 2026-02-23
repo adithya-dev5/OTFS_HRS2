@@ -1,10 +1,5 @@
 function test_dd_to_physical_mapping()
-% TEST_DD_TO_PHYSICAL_MAPPING Independent of current working directory.
-this_file = mfilename('fullpath');
-this_dir = fileparts(this_file);
-repo_root = fileparts(this_dir);
-addpath(fullfile(repo_root, 'config'));
-
+addpath('config');
 cfg = default_config();
 
 li = 5.3;

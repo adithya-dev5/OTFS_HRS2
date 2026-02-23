@@ -1,11 +1,5 @@
 function test_rvm_peak_location()
-% TEST_RVM_PEAK_LOCATION Independent of current working directory.
-this_file = mfilename('fullpath');
-this_dir = fileparts(this_file);
-repo_root = fileparts(this_dir);
-addpath(fullfile(repo_root, 'config'));
-addpath(fullfile(repo_root, 'core', 'sensing'));
-
+addpath('config'); addpath('core/sensing');
 cfg = default_config();
 
 RVM = zeros(64,64);
