@@ -22,6 +22,3 @@ All runners save structured outputs to `cfg.experiments.output_dir` and return r
 - `tests/test_channel_scaling.m`
 - `tests/test_rvm_peak_location.m`
 - `tests/run_all_tests.m`
-
-## Numerical invariance harness
-- `core/metrics/validate_numerical_invariance.m` compares pre-refactor (`src/*`) and post-refactor (`core/*`) outputs for DD grid, channel output, RVM, BER, and RMSE under identical seed/config and halts if any deviation exceeds `1e-10`.

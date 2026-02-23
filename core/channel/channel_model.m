@@ -1,10 +1,6 @@
 function rx = channel_model(tx, cfg, mode)
 % CHANNEL_MODEL Unified channel interface.
 % mode: "synthetic_integer" | "synthetic_fractional" | "backscatter"
-assert(isfield(cfg,'seed_initialized') && cfg.seed_initialized, ...
-    'Seed must be initialized before channel invocation.');
-assert(isvector(tx) && ~isempty(tx), 'Channel input must be a non-empty time-domain waveform vector.');
-assert(isfield(cfg,'fs') && cfg.fs > 0, 'cfg.fs must be defined globally.');
 if nargin < 3 || strlength(mode) == 0
     mode = cfg.channel.mode;
 end

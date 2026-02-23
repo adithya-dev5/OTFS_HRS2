@@ -3,7 +3,7 @@
 clear; close all; clc;
 addpath('config');
 addpath('core/tx'); addpath('core/channel'); addpath('core/rx');
-addpath('core/equalization'); addpath('core/sensing'); addpath('core/metrics'); addpath('core/utils');
+addpath('core/equalization'); addpath('core/sensing'); addpath('core/metrics');
 addpath('experiments');
 
 cfg = default_config();
