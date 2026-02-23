@@ -1,0 +1,44 @@
+=== FULL DIAGNOSTIC START ===
+
+Found: waveform_package.mat
+Found receiver_results.mat: 1
+Fields in waveform_package: X, params, tx_signal
+X present: size 32x32
+tx present: length 1024
+params present
+params.N = 32
+params.M = 32
+params.fs = 1e+06
+params.Mcp = 0
+
+Function availability:
+ - otfs_modulate : C:\Users\Adithyadev\OneDrive - nitc.ac.in\Desktop\FY Project\project_root\src\txr\otfs_modulate.m
+ - otfs_demodulate : C:\Users\Adithyadev\OneDrive - nitc.ac.in\Desktop\FY Project\project_root\src\receiver\otfs_demodulate.m
+ - apply_channel : C:\Users\Adithyadev\OneDrive - nitc.ac.in\Desktop\FY Project\project_root\src\txr\apply_channel.m
+ - synth_channel_from_targets : C:\Users\Adithyadev\OneDrive - nitc.ac.in\Desktop\FY Project\project_root\src\receiver\synth_channel_from_targets.m
+ - compute_highres_RVM : C:\Users\Adithyadev\OneDrive - nitc.ac.in\Desktop\FY Project\project_root\src\receiver\compute_highres_RVM.m
+ - build_Heff : C:\Users\Adithyadev\OneDrive - nitc.ac.in\Desktop\FY Project\project_root\src\receiver\build_Heff.m
+ - mmse_equalize : C:\Users\Adithyadev\OneDrive - nitc.ac.in\Desktop\FY Project\project_root\src\receiver\mmse_equalize.m
+ - find_RVM_peaks : C:\Users\Adithyadev\OneDrive - nitc.ac.in\Desktop\FY Project\project_root\src\receiver\find_RVM_peaks.m
+
+Fields in receiver_results: Heff, RVM, Xhat, Xhat_unmasked, Y, align_info, metrics, peaks
+ - Y present
+ - Y_raw missing
+
+Shape check: X=32x32, Y=32x32
+Pilot energy fraction in Y = 0.8353
+
+Computing alignment heuristics...
+Suggested raw circshift: [0 0]
+
+Computing RVM...
+RVM computed. Saved diag_RVM.png
+
+Single-target mapping tests...
+synth_channel peak at (5,3)
+apply_channel missing or Delta_f undefined
+
+Heff and equalizer checks...
+Heff/MMSE ok, Xhat saved
+
+=== FULL DIAGNOSTIC COMPLETE ===

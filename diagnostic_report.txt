@@ -1,0 +1,16 @@
+=== OTFS DIAGNOSTIC RUN ===
+Added path: src/receiver
+Added path: src/txr
+Loaded MAT: receiver_results.mat
+Variables: Heff, RVM, Xhat, Y
+Mapped Y -> variable
+Mapped Xhat -> variable
+Mapped Heff -> variable
+Using Parameters: M=32, N=32, lp=15, kp=15
+maskPilot matches calculated (OK).
+Testing otfs_modulate -> otfs_demodulate invertibility...
+Reconstruction Error: 1.210e-16
+-> PASS: Invertibility OK.
+Strongest Peak in Y: (Delay=22, Doppler=25)
+Expected Pilot:      (Delay=15, Doppler=15)
+-> FAIL: Pilot location mismatch. Check Axes.
