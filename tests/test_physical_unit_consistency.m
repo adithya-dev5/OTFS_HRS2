@@ -1,11 +1,5 @@
 function test_physical_unit_consistency()
-% TEST_PHYSICAL_UNIT_CONSISTENCY Independent of current working directory.
-this_file = mfilename('fullpath');
-this_dir = fileparts(this_file);
-repo_root = fileparts(this_dir);
-addpath(fullfile(repo_root, 'config'));
-addpath(fullfile(repo_root, 'core', 'utils'));
-
+addpath('config'); addpath('core/utils');
 cfg = default_config();
 d = validate_physical_units(cfg);
 
